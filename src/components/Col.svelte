@@ -8,7 +8,8 @@
 	@media (min-width: 720px) {
 		.col {
 			margin: 0 15px;
-
+			width: auto;
+			min-width: auto;
     }
 	}
 </style>
