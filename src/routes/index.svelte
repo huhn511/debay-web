@@ -1,50 +1,57 @@
 <script>
-	import successkid from 'images/successkid.jpg';
+	import token from './_token.js';
+	import Avatar from '../components/Avatar.svelte';
+	import Row from '../components/Row.svelte';
+	import Col from '../components/Col.svelte';
+	import Separator from '../components/Separator.svelte';
+	import Price from '../components/Price.svelte';
+	import Button from '../components/Button.svelte';
+	import Image from '../components/Image.svelte';
 </script>
 
 <style>
-	h1, figure, p {
-		text-align: center;
-		margin: 0 auto;
-	}
-
 	h1 {
-		font-size: 2.8em;
-		text-transform: uppercase;
-		font-weight: 700;
-		margin: 0 0 0.5em 0;
+		font-weight: bold;
+		font-size: 2.5em;
+		margin-bottom: 0;
 	}
-
-	figure {
-		margin: 0 0 1em 0;
-	}
-
 	img {
 		width: 100%;
 		max-width: 400px;
 		margin: 0 0 1em 0;
+		border-radius: 10px;
 	}
-
 	p {
-		margin: 1em auto;
-	}
-
-	@media (min-width: 480px) {
-		h1 {
-			font-size: 4em;
-		}
+		margin-top: 15px;
 	}
 </style>
 
 <svelte:head>
-	<title>Sapper project template</title>
+	<title>Debay - {token.name}</title>
 </svelte:head>
 
-<h1>awdaw success!</h1>
+<Row>
+	<Col>
+		<Image imageUrl="{token.imageUrl}" />
+	</Col>
+	<Col>
+		<h1>{token.name}</h1>
+		<p>{token.description}</p>
+		
+		<Separator title="owner" />
+		<Avatar 
+			imageUrl={token.owner.imageUrl} 
+			name={token.owner.name}
+		/>
 
-<figure>
-	<img alt="Success Kid" src="{successkid}">
-	<figcaption>Have fun with Sapper!</figcaption>
-</figure>
+		<Separator title="Price" />
+		<Price 
+			value={token.price.value}
+			unit={token.price.unit}
+		/>
 
-<p><strong>Try Jjojo this file (src/routes/index.svelte) to test live awdawda.</strong></p>
+		<Button>Buy now</Button>
+	</Col>
+</Row>
+
+
