@@ -14,5 +14,5 @@
 </style>
 
 <button>
-	<slot></slot>
+	<slot/>
 </button>

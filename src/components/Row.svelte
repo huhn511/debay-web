@@ -13,5 +13,5 @@
 </style>
 
 <div class="row">
-  <slot></slot>
+	<slot/>
 </div>
