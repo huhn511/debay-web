@@ -4,7 +4,7 @@ The default template for setting up a [Sapper](https://github.com/sveltejs/sappe
 
 
 ## Getting started
-See demo here: https://rep0x.github.io/debay-web/
+See demo here: https://debay-web-rep0x.vercel.app/
 
 ### Using `degit`
 
