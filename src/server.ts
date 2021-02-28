@@ -8,7 +8,7 @@ const dev = NODE_ENV === 'development'
 
 polka() // You can also use Express
 	.use(
-		dev ? "/" : "debay-web",
+		dev ? "/" : "/debay-web/",
 		compression({ threshold: 0 }),
 		sirv('static', { dev }),
 		sapper.middleware()
