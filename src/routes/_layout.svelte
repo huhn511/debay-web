@@ -68,6 +68,7 @@
 	:global(h1) {
 		font-weight: bold;
 		font-size: var(--space-xxxl);
+		margin-top: 0;
 		margin-bottom: var(--space-sm);
 	}
 
