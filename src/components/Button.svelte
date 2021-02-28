@@ -1,18 +1,23 @@
+<script>
+	export let callback
+</script>
+
 <style>
   button {
-		background-color: rgba(52, 116, 235);
+		background-color: var(--color-primary);
 		outline: none;
 		border-radius: 100px;
-		border: 2px solid rgba(0,0,0,.1);
-		padding: 1em 2em;
-		font-size: 1em;
-		color: white;
+		border: var(--border);
+		padding: var(--space-md);
+		font-size: var(--space-md);
+		color: var(--color-white);
 		display: block;
 		width: 100%;
 		font-weight: bold;
+		cursor: pointer;
 	}
 </style>
 
-<button>
+<button on:click={callback}>
 	<slot/>
 </button>

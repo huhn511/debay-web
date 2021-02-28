@@ -6,12 +6,12 @@
   @media (min-width: 720px) {
     .row {
       justify-content: space-between;
-      margin: 0 -15px;
+      margin: 0 var(--space-md);
       flex-wrap: nowrap;
     }
 	}
 </style>
 
-<div class="row">
+<div class='row'>
 	<slot/>
 </div>

@@ -8,17 +8,17 @@
 
 <style>
   button {
-		background-color: rgba(52, 116, 235);
+		background-color: var(--color-primary);
 		outline: none;
 		border-radius: 100px;
-		border: 2px solid rgba(0,0,0,.1);
-		width: 50px;
-		height: 50px;
+		border: var(--border);
+		width: var(--space-xxxl);
+		height: var(--space-xxxl);
 		font-size: 1em;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		color: white;
+		color: var(--color-white);
 		cursor: pointer;
 	}
 </style>

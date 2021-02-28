@@ -1,5 +1,5 @@
-<script>
-  export let imageUrl
+<script lang='ts'>
+  export let imageUrl: string
 </script>
 
 <style>
@@ -7,12 +7,12 @@
     background-size: cover;
     width: 100%;
     height: 300px;
-    margin-bottom: 30px;
-    border-radius: 10px;
+    margin-bottom: var(--space-lg);
+    border-radius: var(--radius);
   }
 </style>
 
 <div 
-  class="image" 
+  class='image' 
   style="background-image: url('{imageUrl}')"
 />

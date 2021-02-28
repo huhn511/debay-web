@@ -7,13 +7,13 @@
 	
 	@media (min-width: 720px) {
 		.col {
-			margin: 0 15px;
+			margin: 0 var(--space-md);
 			width: auto;
 			min-width: auto;
     }
 	}
 </style>
 
-<div class="col">
+<div class='col'>
 	<slot/>
 </div>

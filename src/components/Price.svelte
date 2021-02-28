@@ -1,4 +1,4 @@
-<script lang="ts">
+<script lang='ts'>
   export let value: number
   export let unit: string
 </script>
@@ -7,21 +7,21 @@
   .price {
 		display: flex;
 		align-items: flex-end;
-		margin-bottom: 20px;
+		margin-bottom: var(--space-md);
 	}
 
 	h3 {
-		font-size: 2em;
+		font-size: var(--space-xl);
 		font-weight: bold;
-		margin: 0 5px 0 0;
+		margin: 0 var(--space-xxs) 0 0;
 	}
 
 	span {
-		margin-bottom: 2px;
+		margin-bottom: var(--space-xxxs);
 	}
 </style>
 
-<div class="price">
+<div class='price'>
 	<h3>{value}</h3>
 	<span>{unit}</span>
 </div>

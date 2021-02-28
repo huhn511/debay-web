@@ -1,15 +1,15 @@
-<script lang="ts">
+<script lang='ts'>
   export let title: string
 </script>
 
 <style>
   span {
 		text-transform: uppercase;
-		font-size: 14px;
+		font-size: var(--space-sm);
 		letter-spacing: 0.1em;
 		font-weight: bold;
-		margin-bottom: 5px;
-		opacity: .5;
+		margin-bottom: var(--space-xxs);
+		opacity: 0.5;
 	}
 </style>
 
