@@ -1,5 +1,6 @@
 <script>
-	import token from './_token.js';
+	import nft from './_nft.js';
+
 	import Avatar from '../components/Avatar.svelte';
 	import Row from '../components/Row.svelte';
 	import Col from '../components/Col.svelte';
@@ -9,45 +10,28 @@
 	import Image from '../components/Image.svelte';
 </script>
 
-<style>
-	h1 {
-		font-weight: bold;
-		font-size: 2.5em;
-		margin-bottom: 0;
-	}
-	img {
-		width: 100%;
-		max-width: 400px;
-		margin: 0 0 1em 0;
-		border-radius: 10px;
-	}
-	p {
-		margin-top: 15px;
-	}
-</style>
-
 <svelte:head>
-	<title>Debay - {token.name}</title>
+	<title>Debay - {nft.name}</title>
 </svelte:head>
 
 <Row>
 	<Col>
-		<Image imageUrl="{token.imageUrl}" />
+		<Image imageUrl="{nft.imageUrl}" />
 	</Col>
 	<Col>
-		<h1>{token.name}</h1>
-		<p>{token.description}</p>
+		<h1>{nft.name}</h1>
+		<p>{nft.description}</p>
 		
 		<Separator title="owner" />
 		<Avatar 
-			imageUrl={token.owner.imageUrl} 
-			name={token.owner.name}
+			imageUrl={nft.owner.imageUrl} 
+			name={nft.owner.name}
 		/>
 
 		<Separator title="Price" />
 		<Price 
-			value={token.price.value}
-			unit={token.price.unit}
+			value={nft.price.value}
+			unit={nft.price.unit}
 		/>
 
 		<Button>Buy now</Button>
