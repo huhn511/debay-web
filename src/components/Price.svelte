@@ -1,6 +1,6 @@
-<script>
-  export let value
-  export let unit
+<script lang="ts">
+  export let value: number
+  export let unit: string
 </script>
 
 <style>

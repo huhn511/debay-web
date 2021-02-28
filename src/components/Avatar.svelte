@@ -1,10 +1,9 @@
-<script>
-  export let imageUrl
-  export let name
+<script lang="ts">
+  export let imageUrl: string
+  export let name: string
 </script>
 
 <style>
-  
   .avatar {
     display: flex;
     align-items: center;
@@ -18,7 +17,6 @@
     margin-right: 15px;
     background-size: cover;
   }
-
 </style>
 
 <div class="avatar">
